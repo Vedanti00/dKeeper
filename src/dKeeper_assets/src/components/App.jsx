@@ -3,12 +3,15 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
-
+import {dKeeper} from "../../../declarations/dKeeper"
+ 
 function App() {
   const [notes, setNotes] = useState([]);
 
   function addNote(newNote) {
     setNotes(prevNotes => {
+      //adding new note to backend
+      dKeeper.createNote(newNote.title, newNote.content)
       return [...prevNotes, newNote];
     });
   }
