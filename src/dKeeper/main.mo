@@ -18,4 +18,9 @@ actor dKeeper {
     Debug.print(debug_show(notes))
   };
 
+    //display notes from backend
+    public query func readNotes(): async [Note] {
+      return List.toArray(notes);
+  };
+
 }
