@@ -34,7 +34,7 @@
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
     "util": "0.12.4",
-    "webpack": "5.71.0",
+    "webpack": "^5.88.2",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.8.0"
   },
@@ -46,10 +46,9 @@
   ],
   "dependencies": {
     "@material-ui/core": "4.6.1",
-    "package_name": "^1.0.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.0",
+    "react": "^16.8.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "uuid": "8.3.2"
   }
 }
